@@ -1,0 +1,49 @@
+.empty{
+    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(221,221,221)),to(rgb(170,170,170))); 
+}
+
+.waiting_meals{
+    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(255,38,38)),to(rgb(178,0,0))); 
+}
+
+.having_meals{
+    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(128,255,0)),to(rgb(0,178,0))); 
+}
+
+.anger{
+    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(102,26,0)),to(rgb(64,16,0))); 
+}
+
+.waiting_place{
+    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(38,147,255)),to(rgb(0,109,217))); 
+}
+
+.place{
+    margin:20px 100px 0px 20px;
+}
+
+.customer_avatar{
+    width:100px;
+    height: 100px;
+    display: flex;
+    border-radius: 50%;
+    border: white 10px solid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+*{
+    background-image: url("image/ifetaskasset/background(1).png");
+}
+
+#table{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    border:white 10px solid;
+    background:rgb(255,166,77);
+    overflow: hidden;
+}
