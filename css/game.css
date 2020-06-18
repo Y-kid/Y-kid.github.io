@@ -46,4 +46,10 @@
     border:white 10px solid;
     background:rgb(255,166,77);
     overflow: hidden;
+    transition: transform 3s;
+}
+
+
+#table:hover{
+    transform:rotate(360deg);
 }
