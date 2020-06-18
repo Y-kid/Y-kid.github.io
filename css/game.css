@@ -19,12 +19,12 @@
 }
 
 .place{
-    margin:20px 100px 0px 20px;
+    margin:20px 100px 0px 40px;
 }
 
 .customer_avatar{
-    width:100px;
-    height: 100px;
+    width:200px;
+    height: 200px;
     display: flex;
     border-radius: 50%;
     border: white 10px solid;
@@ -34,12 +34,12 @@
 }
 
 *{
-    background-image: url("../images/ifetaskasset/background.png");
+    background: rgb(184,209,178) url("../images/ifetaskasset/background.png") repeat;
 }
 
 #table{
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10%;
