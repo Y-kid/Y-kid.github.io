@@ -1,3 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    background:rgb(184,209,178) url("../images/ifetaskasset/background.jpg") no-repeat;
+    font-size: 60px;
+    color: rgb(140,105,0);
+}
+
+#body{
+    display: inline-flex;
+    justify-content: center;
+}
+
+#header{
+    height: 180px;
+    display: flex;
+    align-items: center;
+
+}
+
+#data{
+    display: flex;
+    border: rgb(140,105,0) 15px solid;
+    width: 30%;
+    height: 70%;
+    border-radius: 25% 25% 25% 25%/50% 50% 50% 50%;
+    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+    text-align: center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+#week{
+    display: inline-block;
+    margin-left: 10%;
+    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+}
+
+#day{
+    display: inline-block;
+    margin-left: 10%;
+    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+}
+
+#money{
+    border: rgb(140,105,0) 15px solid;
+    width: 50%;
+    height: 70%;
+    border-radius: 15% 15% 15% 15%/50% 50% 50% 50%;
+    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+    margin-left: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#fund{
+    margin-right: 10%;
+    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#kitchen{
+    width: 90%;
+    height: 600px;
+    margin-top: 10%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    border:white 15px solid;
+    background:rgb(255,166,77);
+    overflow: hidden;
+    transition: transform 3s;
+    justify-content: center;
+}
+
+#table{
+    width: 90%;
+    height: 600px;
+    margin-top: 40%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    border:white 15px solid;
+    background:rgb(255,166,77);
+    overflow: hidden;
+    transition: transform 3s;
+    justify-content: center;
+}
+
+#table:hover{
+    transform:rotate(360deg);
+}
+
+
 .empty{
     background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(221,221,221)),to(rgb(170,170,170))); 
 }
@@ -19,11 +118,11 @@
 }
 
 .place{
-    margin:20px 100px 0px 40px;
+    margin:5% 20% 0px 20px;
 }
 
 .customer_avatar{
-    width:200px;
+    width: 200px;
     height: 200px;
     display: flex;
     border-radius: 50%;
@@ -31,25 +130,4 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}
-
-*{
-    background: rgb(184,209,178) url("../images/ifetaskasset/background.jpg") repeat;
-}
-
-#table{
-    width: 800px;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10%;
-    border:white 10px solid;
-    background:rgb(255,166,77);
-    overflow: hidden;
-    transition: transform 2s;
-}
-
-
-#table:hover{
-    transform:rotate(360deg);
 }
