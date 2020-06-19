@@ -1,129 +1,172 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    background:rgb(184,209,178) url("../images/ifetaskasset/background.jpg") no-repeat;
     font-size: 60px;
-    color: rgb(140,105,0);
+    color: rgb(140, 105, 0);
 }
 
-#body{
-    display: inline-flex;
-    justify-content: center;
+body {
+    background: rgb(184, 209, 178) url("../images/ifetaskasset/background.jpg") no-repeat center center fixed;
 }
 
-#header{
+#header {
     height: 180px;
     display: flex;
     align-items: center;
 
 }
 
-#data{
+
+#data {
     display: flex;
-    border: rgb(140,105,0) 15px solid;
+    border: rgb(140, 105, 0) 15px solid;
     width: 30%;
     height: 70%;
     border-radius: 25% 25% 25% 25%/50% 50% 50% 50%;
-    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     text-align: center;
     align-items: center;
     margin-left: 3%;
 }
 
-#week{
+#week {
     display: inline-block;
     margin-left: 10%;
-    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+
 }
 
-#day{
+#day {
     display: inline-block;
     margin-left: 10%;
-    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+
 }
 
-#money{
-    border: rgb(140,105,0) 15px solid;
+#money {
+    border: rgb(140, 105, 0) 15px solid;
     width: 50%;
     height: 70%;
     border-radius: 15% 15% 15% 15%/50% 50% 50% 50%;
-    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     margin-left: 8.5%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#fund{
+#fund {
     margin-right: 10%;
-    background-image: -webkit-gradient(linear,0% 49%,0% 51%,from(rgb(255,230,153)),to(rgb(255,210,77))); 
+    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#kitchen{
+#kitchen {
     width: 90%;
     height: 600px;
     margin-top: 10%;
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: inline-block;
     border-radius: 10%;
-    border:white 15px solid;
-    background:rgb(255,166,77);
-    overflow: hidden;
-    transition: transform 3s;
-    justify-content: center;
+    border: white 15px solid;
+    background: rgb(255, 166, 77);
 }
 
-#table{
+#kitchen>img {
+    display: inline-block;
+    margin: 4% 3% 3% 4%;
+}
+
+#kitchen>h3 {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: white 8px solid;
+    position: fixed;
+    margin: 235px 3% 3% 4%;
+    z-index: 10;
+    color:white;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#meal{
+    position: fixed;
+    z-index: 30;
+    width: 180px;
+    height: 180px;
+    top:350px;
+    left: 310px;
+}
+
+#cha{
+    position: fixed;
+    z-index: 30;
+    width: 180px;
+    height: 180px;
+}
+
+
+#table {
     width: 90%;
     height: 600px;
     margin-top: 40%;
     display: inline-flex;
     flex-wrap: wrap;
     border-radius: 10%;
-    border:white 15px solid;
-    background:rgb(255,166,77);
+    border: white 15px solid;
+    background: rgb(255, 166, 77);
     overflow: hidden;
     transition: transform 3s;
     justify-content: center;
 }
 
-#table:hover{
-    transform:rotate(360deg);
+#table:hover {
+    transform: rotate(360deg);
 }
 
 
-.empty{
-    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(221,221,221)),to(rgb(170,170,170))); 
+.color_gray {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(221, 221, 221)), to(rgb(170, 170, 170)));
 }
 
-.waiting_meals{
-    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(255,38,38)),to(rgb(178,0,0))); 
+.color_red {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(255, 38, 38)), to(rgb(178, 0, 0)));
 }
 
-.having_meals{
-    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(128,255,0)),to(rgb(0,178,0))); 
+.color_green {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(128, 255, 0)), to(rgb(0, 178, 0)));
 }
 
-.anger{
-    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(102,26,0)),to(rgb(64,16,0))); 
+.color_brown {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(102, 26, 0)), to(rgb(64, 16, 0)));
 }
 
-.waiting_place{
-    background-image: -webkit-gradient(linear,49% 0%,51% 0%,from(rgb(38,147,255)),to(rgb(0,109,217))); 
+.color_blue {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(38, 147, 255)), to(rgb(0, 109, 217)));
 }
 
-.place{
-    margin:5% 20% 0px 20px;
+.color_orange {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(255, 145, 34)), to(rgb(217, 109, 0)));
 }
 
-.customer_avatar{
+.color_reorange0 {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(217, 109, 0)), to(rgb(255, 145, 34)));
+}
+
+.color_reorange3 {
+    background-image: -webkit-gradient(linear, 69% 0%, 71% 0%, from(rgb(217, 109, 0)), to(rgb(255, 145, 34)));
+}
+
+.place {
+    margin: 5% 20% 0px 20px;
+}
+
+.avatar {
     width: 200px;
     height: 200px;
     display: flex;
@@ -132,4 +175,5 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
 }
