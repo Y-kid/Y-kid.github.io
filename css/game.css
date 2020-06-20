@@ -11,22 +11,23 @@ body {
 
 #header {
     height: 180px;
-    display: flex;
-    align-items: center;
+    position: relative;
 
 }
 
 
 #data {
-    display: flex;
     border: rgb(140, 105, 0) 15px solid;
     width: 30%;
     height: 70%;
     border-radius: 25% 25% 25% 25%/50% 50% 50% 50%;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    text-align: center;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+    display: flex;
     align-items: center;
-    margin-left: 3%;
+    justify-content: center;
 }
 
 #week {
@@ -43,11 +44,14 @@ body {
 
 #money {
     border: rgb(140, 105, 0) 15px solid;
-    width: 50%;
+    width: 60%;
     height: 70%;
     border-radius: 15% 15% 15% 15%/50% 50% 50% 50%;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     margin-left: 8.5%;
+    position: absolute;
+    right: -15%;
+    top: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -59,7 +63,7 @@ body {
 }
 
 #kitchen {
-    width: 90%;
+    width: 100%;
     height: 600px;
     border-radius: 10%;
     border: white 15px solid;
@@ -89,7 +93,7 @@ body {
 
 #chef2{
     top: 3%;
-    left: 36%;
+    left: 38%;
 }
 
 #chef3{
@@ -104,7 +108,7 @@ body {
 
 #chef5{
     top: 53%;
-    left: 36%;
+    left: 38%;
 }
 
 .meal{
@@ -131,7 +135,7 @@ body {
 }
 
 #table {
-    width: 90%;
+    width: 100%;
     height: 600px;
     border-radius: 10%;
     border: white 15px solid;
