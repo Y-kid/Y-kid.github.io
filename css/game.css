@@ -1,29 +1,35 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 60px;
-    color: rgb(140, 105, 0);
+    font-size: 50px;
+    color: #8c6900;
 }
 
+html {
+    margin: 0 auto;
+    height: 100%;
+  }
+   
 body {
-    background: rgb(184, 209, 178) url("../images/ifetaskasset/background.jpg") no-repeat center center fixed;
-    width: 1080px;
-    height: 2280px;
-}
+    margin: 0 auto;
+    height: 100%;
+    background: #b8d1b2 url("../images/ifetaskasset/background.jpg") no-repeat center center fixed;
+  }
 
 #header {
-    height: 200px;
+    height: 250px;
+    margin: 0 auto;
     position: relative;
 
 }
 
 #data {
     border: rgb(140, 105, 0) 20px solid;
-    width: 30%;
-    height: 60%;
+    width: 25%;
+    height: 40%;
     border-radius: 80px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    line-height: 126px;
+    line-height: 100px;
     text-align: center;
     position: absolute;
     left: 3%;
@@ -41,10 +47,10 @@ body {
 #money {
     border: rgb(140, 105, 0) 20px solid;
     width: 50%;
-    height: 60%;
+    height: 40%;
     border-radius: 80px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    line-height: 126px;
+    line-height: 100px;
     text-align: end;
     position: absolute;
     right: 3%;
@@ -58,19 +64,18 @@ body {
 
 #main{
     width: 100%;
-    height: 2080px;
+    height: 86%;
 }
 
 #kitchen {
     width: 90%;
-    height: 30%;
+    height: 36%;
     border-radius: 80px;
     border: white 20px solid;
     background: rgb(255, 210, 77);
     position: relative;
     z-index: 1;
     left: 3%;
-    top: 100px;
 }
 
 #kitchen>div {
@@ -136,14 +141,14 @@ body {
 
 #table {
     width: 90%;
-    height: 30%;
+    height: 36%;
     border-radius: 80px;
     border: white 20px solid;
     background: rgb(255, 166, 77);
     position: relative;
     z-index: 1;
     left: 3%;
-    top: 400px;
+    bottom: -6%;
 }
 
 #table>div {
@@ -292,18 +297,34 @@ body {
     position: relative;
     z-index: 5;
     font-size:60px;
-    left: 3%;
+    left: 0px;
     top: -40%;
 }
 
 .yes{
     border: rgb(140, 105, 0) 10px solid;
-    height: 20%;
-    border-radius: 80px;
+    height: 25%;
+    width: 50%;
+    border-radius: 88px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     line-height: 126px;
-    text-align: end;
+    text-align: center;
+    line-height: 156px;
     position: absolute;
+    bottom: 10%;
+    left: 3%;
+}
+
+.no{
+    border: rgb(140, 105, 0) 10px solid;
+    height: 25%;
+    width: 30%;
+    border-radius: 88px;
+    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
+    line-height: 126px;
+    text-align: center;
+    line-height: 156px;
+    position: absolute;
+    bottom: 10%;
     right: 3%;
-    top: 50px;
 }
