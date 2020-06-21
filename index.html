@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
     <title>WebMOOC 餐厅</title>
     <link rel="stylesheet" type="text/css" href="css/game.css">
 
@@ -91,8 +91,24 @@
             let main = document.getElementById("main");
             let newDiv = document.createElement("div");
 
-            let yes = document.createElement("h3");
-            let no = document.createElement("h3");
+            let words = ["招聘新厨师","招聘一名新厨师可以帮你更快地为顾客烹饪菜肴","增加餐厅收入。你最多可以拥有六名厨师。",
+            "但每个厨师每周需要你支付工资￥100","请问你确认新招聘一名厨师吗?"]
+            
+            let text = [];
+            for(let i=0;i<5;i++)
+            {
+                if(i==0)
+                    text[i] = document.createElement("h2"); 
+                else
+                    text[i] = document.createElement("h3"); 
+                text[i].innerText = words[i];
+                newDiv.appendChild(text[i]);
+            }   //创建并添加五行文字部分
+            
+
+            let yes = document.createElement("h4");
+            let no = document.createElement("h4");
+            
             yes.setAttribute("class","yes");
             no.setAttribute("class","no");
             no.setAttribute("onclick","cancel()");
