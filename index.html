@@ -2,24 +2,24 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>WebMOOC 餐厅</title>
-	<link rel="stylesheet" type="text/css" href="css/game.css">
+    <meta charset="UTF-8">
+    <title>WebMOOC 餐厅</title>
+    <link rel="stylesheet" type="text/css" href="css/game.css">
 
 </head>
 
 <body>
-	<div id="header">
-		<div id="data">
-			<span id="week">W1</span>
-			<span id="day">D1</span>
-		</div>
-		<div id="money">
-			<span id="fund">1,948,343</span>
-		</div>
-	</div>
-	<div id="main">
-		<div id="kitchen">
+    <div id="header">
+        <div id="data">
+            <span id="week">W1</span>
+            <span id="day">D1</span>
+        </div>
+        <div id="money">
+            <span id="fund">1,948,343</span>
+        </div>
+    </div>
+    <div id="main">
+        <div id="kitchen">
             <div id="chef1">
                 <img src="images/ifetaskasset/chef.png" class="avatar chef color_orange">
                 <h3 class="color_reorange0">UL炖LI</h3>
@@ -36,52 +36,65 @@
             <div id="chef4" class="chef">
                 <img src="images/ifetaskasset/chef.png" class="avatar chef color_gray">
             </div>
-            <div id="chef5" class="chef">
+            <div id="chef5" class="chef" onclick="addChef()">
                 <img style="background-color: rgb(221,221,221);" class="avatar chef">
             </div>
 
-		</div>
+        </div>
 
-		<div id="table">
-                <div id="customer1">
-                    <img src="images/ifetaskasset/3.png" class="avatar customer color_brown">
-                    <img src="images/ifetaskasset/heart.png" class="status">
-                    <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box1">UL炖LI</h3>
-                    <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box2">鲜榨flex</h3>
-                </div>
-                <div id="customer2">
-                    <img src="images/ifetaskasset/4.png" class="avatar customer color_green">
-                    <img src="images/ifetaskasset/dollar.png" class="status">
-                    <h3 style="background-color: rgb(0, 178, 0);" class="meal_box1">UL炖LI</h3>
-                    <h3 style="background-color: rgb(0, 178, 0);" class="meal_box2">UL炖LI</h3>
-                    <h3 style="background-color: rgb(0, 178, 0);" class="meal_box3">UL炖LI</h3>
-                </div>
-                <div id="customer3">
-                    <img src="images/ifetaskasset/5.png" class="avatar customer color_orange">
-                    <h3 class="meal_box1 color_orange">UL炖LI</h3>
-                </div>
-                <div id="customer4">
-                    <img src="images/ifetaskasset/7.png" class="avatar customer color_green">
-                    <img src="images/ifetaskasset/dollar.png" class="status">
-                    <h3 style="background-color: rgb(0, 178, 0);" class="meal_box1">UL炖LI</h3>
-                    <h3 style="background-color: rgb(0, 178, 0);" class="meal_box2">UL炖LI</h3>
-                    <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box3">红烧HEAD</h3>
-                </div>
-                <div id="customer5">
-                    <img src="images/ifetaskasset/6.png" class="avatar color_blue">
-                    <h class="under_case color_blue">等位中</h>
-                </div>
-                <div id="customer6">
-                    <img src="images/ifetaskasset/1.png" class="avatar color_blue">
-                    <h class="under_case color_blue">等位中</h>
-                </div>
-			<!-- <img src="images/ifetaskasset/3.png" class="avatar color_brown place">
-			<img src="images/ifetaskasset/4.png" class="avatar color_green place">
-			<img src="images/ifetaskasset/5.png" class="avatar color_orange place">
-			<img src="images/ifetaskasset/7.png" class="avatar color_green place"> -->
-		</div>
+        <div id="table">
+            <div id="customer1">
+                <img src="images/ifetaskasset/3.png" class="avatar customer color_brown">
+                <img src="images/ifetaskasset/heart.png" class="status">
+                <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box1">UL炖LI</h3>
+                <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box2">鲜榨flex
+                </h3>
+            </div>
+            <div id="customer2">
+                <img src="images/ifetaskasset/4.png" class="avatar customer color_green">
+                <img src="images/ifetaskasset/dollar.png" class="status">
+                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box1">UL炖LI</h3>
+                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box2">UL炖LI</h3>
+                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box3">UL炖LI</h3>
+            </div>
+            <div id="customer3">
+                <img src="images/ifetaskasset/5.png" class="avatar customer color_orange">
+                <h3 class="meal_box1 color_orange">UL炖LI</h3>
+            </div>
+            <div id="customer4">
+                <img src="images/ifetaskasset/7.png" class="avatar customer color_green">
+                <img src="images/ifetaskasset/dollar.png" class="status">
+                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box1">UL炖LI</h3>
+                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box2">UL炖LI</h3>
+                <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box3">红烧HEAD
+                </h3>
+            </div>
+            <div id="customer5">
+                <img src="images/ifetaskasset/6.png" class="avatar color_blue">
+                <h class="under_case color_blue">等位中</h>
+            </div>
+            <div id="customer6">
+                <img src="images/ifetaskasset/1.png" class="avatar color_blue">
+                <h class="under_case color_blue">等位中</h>
+            </div>
+        </div>
 
-	</div>
+
+
+    </div>
 </body>
+<!-- <script>
+    function addChef() {
+        let newChef = document.getElementById("newChef");
+        
+
+        let h = newChef.firstElementChild;
+        console.log(newChef);
+        console.log(h);
+        newChef.innerHTML = "<div id='newChev'><h3>招聘新厨师</h3>招聘一名新厨师可以帮你更快地为顾客烹饪菜肴,增加餐厅收入。你最多可以拥有六名厨师。但每个厨师每周需要你支付工资￥100请问你确认新招聘一名厨师吗?</div>";
+
+    }
+
+</script> -->
 
 </html>

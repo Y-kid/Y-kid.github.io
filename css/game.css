@@ -7,27 +7,32 @@
 
 body {
     background: rgb(184, 209, 178) url("../images/ifetaskasset/background.jpg") no-repeat center center fixed;
+    width: 1080px;
+    height: 2280px;
 }
 
 #header {
-    height: 180px;
+    height: 200px;
     position: relative;
 
 }
 
+#main{
+    width: 100%;
+    height: 2080px;
+}
 
 #data {
-    border: rgb(140, 105, 0) 15px solid;
+    border: rgb(140, 105, 0) 20px solid;
     width: 30%;
-    height: 70%;
-    border-radius: 25% 25% 25% 25%/50% 50% 50% 50%;
+    height: 60%;
+    border-radius: 80px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
+    line-height: 126px;
+    text-align: left;
     position: absolute;
-    left: 5%;
+    left: 3%;
     top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #week {
@@ -43,18 +48,16 @@ body {
 }
 
 #money {
-    border: rgb(140, 105, 0) 15px solid;
-    width: 80%;
-    height: 70%;
-    border-radius: 8% 8% 8% 8%/50% 50% 50% 50%;
+    border: rgb(140, 105, 0) 20px solid;
+    width: 50%;
+    height: 60%;
+    border-radius: 80px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    margin-left: 8.5%;
+    line-height: 126px;
+    text-align: end;
     position: absolute;
-    right: -30%;
+    right: 3%;
     top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 
 #fund {
@@ -63,55 +66,56 @@ body {
 }
 
 #kitchen {
-    width: 120%;
-    height: 600px;
-    border-radius: 8%;
-    border: white 15px solid;
-    background: rgb(255, 166, 77);
+    width: 80%;
+    height: 33%;
+    border-radius: 60px;
+    border: white 20px solid;
+    background: rgb(255, 210, 77);
     position: relative;
-    left: 6%;
-    top: 200px;
+    z-index: 1;
+    left: 8.6%;
+    top: 100px;
 }
 
-#kitchen>div{
+#kitchen>div {
     position: absolute;
     z-index: 1;
     width: 250px;
     height: 250px;
 }
 
-.chef{
+.chef {
     position: absolute;
     left: 25px;
     top: 25px;
 }
 
-#chef1{
+#chef1 {
     top: 3%;
     left: 3%;
 }
 
-#chef2{
+#chef2 {
     top: 3%;
     left: 38%;
 }
 
-#chef3{
+#chef3 {
     top: 3%;
     right: 3%;
 }
 
-#chef4{
+#chef4 {
     top: 53%;
     left: 3%;
 }
 
-#chef5{
+#chef5 {
     top: 53%;
     left: 38%;
 }
 
-.meal{
+.meal {
     width: 150px;
     height: 150px;
     position: absolute;
@@ -124,7 +128,7 @@ body {
     width: 200px;
     height: 50px;
     border: white 8px solid;
-    color:white;
+    color: white;
     font-size: 40px;
     font-weight: normal;
     text-align: center;
@@ -135,71 +139,71 @@ body {
 }
 
 #table {
-    width: 120%;
-    height: 600px;
-    border-radius: 8%;
-    border: white 15px solid;
+    width: 80%;
+    height: 33%;
+    border-radius: 60px;
+    border: white 20px solid;
     background: rgb(255, 166, 77);
-    transition: transform 3s;
     position: relative;
-    left: 6%;
-    top: 600px;
+    z-index: 1;
+    left: 8.6%;
+    top: 300px;
 }
 
-#table>div{
+#table>div {
     position: absolute;
     width: 400px;
     height: 250px;
 }
 
-.customer{
+.customer {
     position: absolute;
     left: 25px;
     top: 25px;
     z-index: 2;
 }
 
-#customer1{
+#customer1 {
     top: 3%;
     left: 3%;
     z-index: 1;
 }
 
-#customer2{
+#customer2 {
     top: 3%;
     right: 3%;
     z-index: 1;
 }
 
-#customer3{
+#customer3 {
     top: 50%;
     left: 3%;
     z-index: 1;
 }
 
-#customer4{
+#customer4 {
     top: 50%;
     right: 3%;
     z-index: 1;
 }
 
-#customer5{
+#customer5 {
     top: 95%;
     right: -4%;
     z-index: 5;
 }
 
-#customer6{
+#customer6 {
     top: 95%;
     right: -22%;
     z-index: 4;
 }
 
-.under_case{
+.under_case {
     width: 200px;
     height: 50px;
     border: white 8px solid;
-    color:white;
+    color: white;
     font-size: 40px;
     font-weight: normal;
     text-align: center;
@@ -209,7 +213,7 @@ body {
     left: 0px;
 }
 
-.status{
+.status {
     width: 150px;
     height: 150px;
     position: absolute;
@@ -222,7 +226,7 @@ body {
     width: 200px;
     height: 50px;
     border: white 8px solid;
-    color:white;
+    color: white;
     font-size: 40px;
     font-weight: normal;
     text-align: center;
@@ -231,20 +235,16 @@ body {
     right: -10px;
 }
 
-.meal_box1{
+.meal_box1 {
     top: 30px;
 }
 
-.meal_box2{
+.meal_box2 {
     top: 105px;
 }
 
-.meal_box3{
+.meal_box3 {
     top: 180px;
-}
-
-#table:hover {
-    transform: rotate(360deg);
 }
 
 .color_gray {
@@ -279,18 +279,28 @@ body {
     background-image: -webkit-gradient(linear, 69% 0%, 71% 0%, from(rgb(217, 109, 0)), to(rgb(255, 145, 34)));
 }
 
-.place {
-    margin: 5% 20% 0px 20px;
-}
 
 .avatar {
     width: 200px;
     height: 200px;
-    display: flex;
     border-radius: 50%;
-    border: white 10px solid;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    display: inline-block;
+    border: white 15px solid;
 }
+
+/* #newChev {
+    width: 100%;
+    height: 600px;
+    border-radius: 60px;
+    border: white 15px solid;
+    background: rgb(255, 210, 77);
+    position: relative;
+    z-index: 20;
+    font-size:60px;
+    left: 17%;
+    top: -550px;
+    padding: 50px 80px;
+}
+
+#newChef h3{
+    text-align: center;
+} */
