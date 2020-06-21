@@ -17,11 +17,6 @@ body {
 
 }
 
-#main{
-    width: 100%;
-    height: 2080px;
-}
-
 #data {
     border: rgb(140, 105, 0) 20px solid;
     width: 30%;
@@ -29,7 +24,7 @@ body {
     border-radius: 80px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     line-height: 126px;
-    text-align: left;
+    text-align: center;
     position: absolute;
     left: 3%;
     top: 50px;
@@ -37,14 +32,10 @@ body {
 
 #week {
     display: inline-block;
-    margin-left: 10%;
-
 }
 
 #day {
     display: inline-block;
-    margin-left: 10%;
-
 }
 
 #money {
@@ -65,15 +56,20 @@ body {
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
 }
 
+#main{
+    width: 100%;
+    height: 2080px;
+}
+
 #kitchen {
-    width: 80%;
-    height: 28%;
-    border-radius: 60px;
+    width: 90%;
+    height: 30%;
+    border-radius: 80px;
     border: white 20px solid;
     background: rgb(255, 210, 77);
     position: relative;
     z-index: 1;
-    left: 8.6%;
+    left: 3%;
     top: 100px;
 }
 
@@ -139,14 +135,14 @@ body {
 }
 
 #table {
-    width: 80%;
-    height: 28%;
-    border-radius: 60px;
+    width: 90%;
+    height: 30%;
+    border-radius: 80px;
     border: white 20px solid;
     background: rgb(255, 166, 77);
     position: relative;
     z-index: 1;
-    left: 8.6%;
+    left: 3%;
     top: 400px;
 }
 
@@ -287,20 +283,27 @@ body {
     border: white 15px solid;
 }
 
-/* #newChev {
-    width: 100%;
-    height: 600px;
-    border-radius: 60px;
-    border: white 15px solid;
+#addChef {
+    width: 90%;
+    height: 30%;
+    border-radius: 80px;
+    border: white 20px solid;
     background: rgb(255, 210, 77);
     position: relative;
-    z-index: 20;
+    z-index: 5;
     font-size:60px;
-    left: 17%;
-    top: -550px;
-    padding: 50px 80px;
+    left: 3%;
+    top: -40%;
 }
 
-#newChef h3{
-    text-align: center;
-} */
+.yes{
+    border: rgb(140, 105, 0) 10px solid;
+    height: 20%;
+    border-radius: 80px;
+    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
+    line-height: 126px;
+    text-align: end;
+    position: absolute;
+    right: 3%;
+    top: 50px;
+}
