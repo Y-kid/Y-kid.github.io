@@ -28,7 +28,7 @@ body {
     height: 40%;
     border-radius: 58px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    line-height: 200%;
+    line-height: 30px;
     text-align: center;
     position: absolute;
     left: 3%;
@@ -49,7 +49,7 @@ body {
     height: 40%;
     border-radius: 60px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    line-height: 200%;
+    line-height: 30px;
     text-align: end;
     position: absolute;
     right: 3%;
@@ -307,18 +307,33 @@ body {
     bottom: 50%;
 }
 
+#addChef h2{
+    text-align: center;
+    color: black;
+    line-height: 2em;
+}
+
+#addChef h3{
+    display: inline-block;
+    position: relative;
+    left: 8%;
+    line-height: 2em;
+    font-size: 0.8em;
+    text-align: start;
+}
+
 .yes{
     border: rgb(140, 105, 0) 0.1em solid;
     width: 53%;
     height: 20%;
     border-radius: 58px;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.1em;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     line-height: 46px;
     text-align: center;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     left: 5%;
 }
 
@@ -327,12 +342,12 @@ body {
     width: 28%;
     height: 20%;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.1em;
     border-radius: 58px;
     background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
     line-height: 46px;
     text-align: center;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     right: 5%;
 }
