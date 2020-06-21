@@ -35,14 +35,6 @@ body {
     top: 20%;
 }
 
-#week {
-    display: inline-block;
-}
-
-#day {
-    display: inline-block;
-}
-
 #money {
     border: rgb(140, 105, 0) 0.4em solid;
     width: 50%;
