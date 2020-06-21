@@ -7,8 +7,8 @@
 
 body {
     background: rgb(184, 209, 178) url("../images/ifetaskasset/background.jpg") no-repeat center center fixed;
-    width: 1080px;
-    height: 2280px;
+    width: 1167px;
+    height: 2658px;
 }
 
 #header {
@@ -19,7 +19,7 @@ body {
 
 #main{
     width: 100%;
-    height: 2080px;
+    height: 2458px;
 }
 
 #data {
@@ -67,7 +67,7 @@ body {
 
 #kitchen {
     width: 80%;
-    height: 33%;
+    height: 28%;
     border-radius: 60px;
     border: white 20px solid;
     background: rgb(255, 210, 77);
@@ -140,14 +140,14 @@ body {
 
 #table {
     width: 80%;
-    height: 33%;
+    height: 28%;
     border-radius: 60px;
     border: white 20px solid;
     background: rgb(255, 166, 77);
     position: relative;
     z-index: 1;
     left: 8.6%;
-    top: 300px;
+    top: 400px;
 }
 
 #table>div {
