@@ -1,7 +1,6 @@
     addChefWindow = 0;
 
     function addChef() {
-        setTimeout(function(){document.getElementById("music").play();},1000);
         if (addChefWindow == 1) return;
         let main = document.getElementById("main");
         let newDiv = document.createElement("div");
@@ -42,4 +41,12 @@
         let delDiv = document.getElementById("addChef");
         delDiv.remove();
         addChefWindow = 0;
+    }
+
+    function music(){
+        let backgroundMusic = document.getElementById("music");
+        if(!backgroundMusic.paused)
+            backgroundMusic.pause();
+        else
+            backgroundMusic.play();
     }
