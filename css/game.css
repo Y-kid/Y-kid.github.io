@@ -4,7 +4,7 @@
     color: #8c6900;
 }
 
-html{
+html {
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -16,18 +16,40 @@ body {
 
     /* 设置背景图片居中 */
     background: #b8d1b2 url("../images/ifetaskasset/background.jpg") no-repeat center center;
-    background-size: contain;   /*设置图片为布满整个屏幕*/
-  }
+    background-size: contain;
+    /*设置图片为布满整个屏幕*/
+}
 
 /* 遮罩层 比弹窗div z-index小1 大于其他一切z-index*/
-#cover{
-    background: #000; 
-    position: absolute; 
-    width: 100%; 
-    height : 100%; 
-    opacity: 0.3; 
-    display: none; 
+#cover {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    display: none;
     z-index: 4;
+}
+
+/* 人物头像大小及背景颜色 */
+.avatar {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: white 0.3em solid;
+}
+
+.mealProgress {
+    background-color: rgb(217, 109, 0);
+    color: rgb(255, 145, 34);
+}
+
+.mealProgress::-webkit-progress-bar {
+    background-color: rgb(255, 145, 34);
+}
+
+.mealProgress::-webkit-progress-value {
+    background-color: rgb(217, 109, 0);
 }
 
 /* 头部日期和钱数显示区域 */
@@ -49,7 +71,7 @@ body {
     position: absolute;
     left: 3%;
     top: 20%;
-} 
+}
 
 /* 钱数区域 */
 #money {
@@ -72,7 +94,7 @@ body {
 }
 
 /* 主体部分 */
-#main{
+#main {
     width: 100%;
     height: 86%;
 }
@@ -158,24 +180,40 @@ body {
     right: -0.5em;
 }
 
-/* 厨师底部做菜名称及进度条 (在单个厨师的自身小区域内) 
-    z-index为3覆盖在单个厨师区域之上 主要是为了覆盖厨师头像*/
-#kitchen h3 {
-    width: 90%;
-    height: 20%;
-    border: white 0.12em solid;
+/* 厨师底部做菜名称 (在单个厨师的自身小区域内) 
+    z-index为4覆盖在progress之上*/
+#kitchen .mealName {
     color: white;
     font-size: 0.8em;
     font-weight: normal;
+    position: absolute;
     text-align: center;
+    width: 94%;
+    z-index: 4;
+    bottom: -3%;
+
+}
+
+#kitchen .mealFinish {
+    background-color: rgb(172, 145, 255);
+    border: white 0.12em solid;
+}
+
+/* 厨师底部做菜进度条 (在单个厨师的自身小区域内) 
+    z-index为3覆盖在厨师自身区域之上 菜名之下*/
+#kitchen progress {
+    width: 94%;
+    height: 25%;
+    border: white 0.12em solid;
     position: absolute;
     z-index: 3;
-    bottom: -3%;
+    left: 3%;
+    bottom: -5%;
 }
 
 /* 背景音乐控制区域 
     z-index仅为1在背景之上*/
-#main>h3{
+#main>h3 {
     width: 90%;
     height: 7%;
     border-radius: 65px;
@@ -221,42 +259,42 @@ body {
     top: 10%;
 }
 
-#customer1 {
+#place1 {
     width: 8em;
     height: 5em;
-    top: 3%;
+    top: 5%;
     left: 3%;
 }
 
-#customer2 {
+#place2 {
     width: 8em;
     height: 5em;
-    top: 3%;
+    top: 5%;
     right: 5%;
 }
 
-#customer3 {
+#place3 {
     width: 8em;
     height: 5em;
-    top: 50%;
+    top: 53%;
     left: 3%;
 }
 
-#customer4 {
+#place4 {
     width: 8em;
     height: 5em;
-    top: 50%;
+    top: 53%;
     right: 5%;
 }
 
-#customer5 {
+#place5 {
     width: 5em;
     height: 5em;
     top: 90%;
     right: 11%;
 }
 
-#customer6 {
+#place6 {
     width: 5em;
     height: 5em;
     top: 90%;
@@ -291,18 +329,41 @@ body {
 }
 
 /* 顾客桌面的菜的框
-     z-index为3覆盖在顾客头像之上*/
-#table h3 {
+     z-index为4覆盖在进度条之上*/
+#table .mealName {
     width: 55%;
     height: 20%;
-    border: white 0.12em solid;
     color: white;
     font-size: 0.8em;
     font-weight: normal;
     text-align: center;
     position: absolute;
-    z-index: 3;
+    line-height: 16px;
+    z-index: 4;
     right: -3%;
+}
+
+/* 顾客的菜的进度条大小和位置  */
+#table .progress {
+    width: 58%;
+    height: 23%;
+    border: white 0.12em solid;
+    position: absolute;
+    z-index: 3;
+    right: -4.5%;
+}
+
+
+#table .mealUnfinish {
+    border: white 0.12em solid;
+    background-color: rgb(83, 83, 98);
+    text-decoration: line-through;
+}
+
+#table .mealFinish {
+    border: white 0.12em solid;
+    background-color: rgb(0, 178, 0);
+    text-decoration: line-through;
 }
 
 /* 菜的3个位置 */
@@ -318,107 +379,15 @@ body {
     top: 4.0em;
 }
 
-.color_gray {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(221, 221, 221)), to(rgb(170, 170, 170)));
+/* progres的三个位置 */
+.mealBox1 {
+    top: 0.6em;
 }
 
-.color_red {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(255, 38, 38)), to(rgb(178, 0, 0)));
+.mealBox2 {
+    top: 1.9em;
 }
 
-.color_green {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(128, 255, 0)), to(rgb(0, 178, 0)));
-}
-
-.color_brown {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(102, 26, 0)), to(rgb(64, 16, 0)));
-}
-
-.color_blue {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(38, 147, 255)), to(rgb(0, 109, 217)));
-}
-
-.color_orange {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(255, 145, 34)), to(rgb(217, 109, 0)));
-}
-
-.color_reorange0 {
-    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(217, 109, 0)), to(rgb(255, 145, 34)));
-}
-
-.color_reorange3 {
-    background-image: -webkit-gradient(linear, 69% 0%, 71% 0%, from(rgb(217, 109, 0)), to(rgb(255, 145, 34)));
-}
-
-/* 人物头像大小及背景颜色 */
-.avatar {
-    width: 4em;
-    height: 4em;
-    border-radius: 50%;
-    border: white 0.3em solid;
-}
-
-/* 添加厨师区域 
-    z-index为5在最顶层
-    遮罩层z-index为4*/
-#addChef {
-    width: 90%;
-    height: 35%;
-    border-radius: 10%;
-    border: white 0.6em solid;
-    background: rgb(255, 210, 77);
-    position: relative;
-    z-index: 5;
-    left: 1.8%;
-    bottom: 50%;
-}
-
-/* 添加厨师区域标题部分 */
-#addChef h2{
-    text-align: center;
-    color: black;
-    line-height: 1.5em;
-}
-
-/* 添加厨师区域文本部分 */
-#addChef h3{
-    display: inline-block;
-    position: relative;
-    left: 8%;
-    line-height: 2em;
-    font-size: 0.8em;
-    text-align: start;
-}
-
-/* 添加厨师区域确定按钮 */
-.yes{
-    border: rgb(140, 105, 0) 0.1em solid;
-    width: 53%;
-    height: 20%;
-    border-radius: 58px;
-    font-weight: normal;
-    font-size: 1.1em;
-    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    line-height: 46px;
-    text-align: center;
-    position: absolute;
-    bottom: 8%;
-    left: 5%;
-}
-
-
-/* 添加厨师区域取消按钮 */
-.no{
-    border: rgb(140, 105, 0) 0.1em solid;
-    width: 28%;
-    height: 20%;
-    font-weight: normal;
-    font-size: 1.1em;
-    border-radius: 58px;
-    background-image: -webkit-gradient(linear, 0% 49%, 0% 51%, from(rgb(255, 230, 153)), to(rgb(255, 210, 77)));
-    line-height: 46px;
-    text-align: center;
-    position: absolute;
-    bottom: 8%;
-    right: 5%;
+.mealBox3 {
+    top: 3.15em;
 }

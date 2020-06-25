@@ -1,0 +1,23 @@
+.color_gray {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(221, 221, 221)), to(rgb(170, 170, 170)));
+}
+
+.color_red {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(255, 38, 38)), to(rgb(178, 0, 0)));
+}
+
+.color_green {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(128, 255, 0)), to(rgb(0, 178, 0)));
+}
+
+.color_brown {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(102, 26, 0)), to(rgb(64, 16, 0)));
+}
+
+.color_blue {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(38, 147, 255)), to(rgb(0, 109, 217)));
+}
+
+.color_orange {
+    background-image: -webkit-gradient(linear, 49% 0%, 51% 0%, from(rgb(255, 145, 34)), to(rgb(217, 109, 0)));
+}

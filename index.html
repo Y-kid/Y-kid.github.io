@@ -8,6 +8,8 @@
 
     <title>WebMOOC 餐厅</title>
     <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/popWindow.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
     
 </head>
 
@@ -21,13 +23,13 @@
 
         <!-- 日期 -->
         <div id="data">
-            <span id="week">W1</span>
-            <span id="day">D1</span>
+            <span id="week">W0</span>
+            <span id="day">D0</span>
         </div>
 
         <!-- 钱数 -->
         <div id="money">
-            <span id="fund">1,948,343</span>
+            <span id="fund">500</span>
         </div>
     </div>
 
@@ -40,20 +42,23 @@
             <!-- 厨师1 -->
             <div id="chef1">
                 <img src="images/ifetaskasset/chef.png" class="avatar chef color_orange">
-                <h3 class="color_reorange0">UL炖LI</h3>
+                <h3 class="mealName">UL炖LI</h3>
+                <progress class="mealProgress" value="5" max="10"></progress>
+                
             </div>
 
             <!-- 厨师2 -->
             <div id="chef2">
                 <img src="images/ifetaskasset/chef.png" class="avatar chef color_blue">
                 <img src="images/ifetaskasset/meal.png" class="meal">
-                <h3 style="background-color: rgb(172, 145, 255);">鲜榨flex</h3>
+                <h3 class="mealName">鲜榨flex</h3>
+                <progress class="mealProgress" value="10" max="10"></progress>
             </div>
 
             <!-- 厨师3 -->
             <div id="chef3">
                 <img src="images/ifetaskasset/chef.png" class="avatar chef color_orange">
-                <h3 class="color_reorange3">红烧HEAD</h3>
+                <h3 class="mealFinish mealName">红烧HEAD</h3>
             </div>
 
             <!-- 厨师4 解雇厨师按钮-->
@@ -63,7 +68,7 @@
             </div>
 
             <!-- 厨师5 招募厨师按钮-->
-            <div id="chef5" class="chef" onclick="addChef()">
+            <div id="chef5" class="chef" onclick="windowPop('addChefWindow')">
                 <img src="images/ifetaskasset/addchef.png" style="background-color: rgb(221,221,221);" class="avatar chef">
             </div>
 
@@ -81,45 +86,98 @@
             可以有用户的状态：生气（heart）和付钱（dollor）两个状态 -->
         <div id="table">
 
-            <div id="customer1">
-                <img src="images/ifetaskasset/3.png" class="avatar customer color_brown">
-                <img src="images/ifetaskasset/heart.png" class="status">
-                <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box1">UL炖LI</h3>
-                <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box2">鲜榨flex
-                </h3>
+            <div id="place1">
+                <div class="avatar customer color_gray"></div>
+                
+                
             </div>
-            <div id="customer2">
-                <img src="images/ifetaskasset/4.png" class="avatar customer color_green">
+
+            <div id="place2">
+                <div class="avatar customer color_gray"></div>
                 <img src="images/ifetaskasset/dollar.png" class="status">
-                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box1">UL炖LI</h3>
-                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box2">UL炖LI</h3>
-                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box3">UL炖LI</h3>
             </div>
-            <div id="customer3">
-                <img src="images/ifetaskasset/5.png" class="avatar customer color_orange">
-                <h3 class="meal_box1 color_orange">UL炖LI</h3>
+
+            <div id="place3">
+                <div class="avatar customer color_gray"></div>
+
             </div>
-            <div id="customer4">
-                <img src="images/ifetaskasset/7.png" class="avatar customer color_green">
-                <img src="images/ifetaskasset/dollar.png" class="status">
-                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box1">UL炖LI</h3>
-                <h3 style="background-color: rgb(0, 178, 0);" class="meal_box2">UL炖LI</h3>
-                <h3 style="background-color: rgb(83,83,98); text-decoration: line-through;" class="meal_box3">红烧HEAD
-                </h3>
+
+            <div id="place4">
+                <div class="avatar customer color_gray"></div>
             </div>
-            <div id="customer5">
+
+            <div id="place5">
                 <img src="images/ifetaskasset/6.png" class="avatar color_blue">
                 <h class="under_case color_blue">等位中</h>
             </div>
-            <div id="customer6">
+            
+            <div id="place6">
                 <img src="images/ifetaskasset/1.png" class="avatar color_blue">
                 <h class="under_case color_blue">等位中</h>
             </div>
         </div>
 
+        <div id="startWindow" class="popWindow">
+            <h2>WebMOOC餐厅开业啦!</h2>
+            <span>WebMOOC餐厅即将开业，请认真经营你的餐厅吧
+                经营餐厅需要做好下面几件事情！加油！</span>
+            <h3>招聘厨师</h3>
+            <h3>迎接客人</h3>
+            <h3>烹饪美食</h3>
+            <h4 onclick="startGame()">是的</h4>
+        </div>
+
+        <div id="addChefWindow" class="popWindow">
+            <h2>招聘新厨师</h2>
+            <span>招聘一名新厨师可以帮你更快地为顾客烹饪菜肴,</span>
+            <span>增加餐厅收入。你最多可以拥有六名厨师。</span>
+            <span>但每个厨师每周需要你支付工资￥100</span>
+            <span>请问你确认新招聘一名厨师吗?</span>
+            <h4 class="yes" onclick="windowCancel('addChefWindow')">是的</h4>
+            <h4 class="no" onclick="windowCancel('addChefWindow')">先不了</h4>
+        </div>
+
+        <div id="orderDishes">
+            <img src="images/ifetaskasset/4.png" class="avatar color_blue">
+            <h3>后羿正在点菜，已点18元的菜</h3>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <span>凉菜（二选一，可不点）</span>
+                        <ul>
+                            <li><label><input type="radio" name="coldDish" value="1">凉拌SAN</label></li>
+                            <li><label><input type="radio" name="coldDish" value="2">冷切DOM</label></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span>主菜（五选一，必点）</span>
+                        <ul>
+                            <li><label><input type="radio" checked="checked" name="mainCourse" value="1">UL炖LI</label></li>
+                            <li><label><input type="radio" name="mainCourse" value="2">红烧HEAD</label></li>
+                            <li><label><input type="radio" name="mainCourse" value="3">酥炸ECharts</label></li>
+                            <li><label><input type="radio" name="mainCourse" value="4">炙烤CSS</label></li>
+                            <li><label><input type="radio" name="mainCourse" value="5">清蒸DIV</label></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span>饮品（二选一，可不点）</span>
+                        <ul>
+                            <li><label><input type="radio" name="drink" value="1">鲜榨flex</label></li>
+                            <li><label><input type="radio" name="drink" value="2">小程序奶茶</label></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="finishOrder">点好了，快点上菜</div>
+            <div id="cancelOrder">不吃了</div>
+        </div>
 
 
     </div>
+
     <script src="JavaScript.js"></script>
 </body>
 
