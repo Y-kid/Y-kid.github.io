@@ -135,10 +135,10 @@ ul,li{ padding:0;margin:0;list-style:none}
     }
 
     #orderDishes #menu{
-        height: 65%;
+        height: 70%;
         border: rgb(217, 109, 0) 0.2em solid;
         background-color: white;
-        padding: 5%;
+        padding: 0 5%;
     }
 
     #orderDishes ul li{
